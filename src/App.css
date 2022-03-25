@@ -11,6 +11,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -39,8 +40,8 @@ nav h1 {
 
 .board {
   width: 280px;
-  height: 340px;
-  border: 1px solid black;
+  height: 330px;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   /* align-items: center;
@@ -83,7 +84,7 @@ nav h1 {
 .keyboard {
   width: 700px;
   height: 250px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .line1 {
@@ -110,13 +111,13 @@ nav h1 {
 }
 
 .key {
-  width: 40px;
-  height: 55px;
+  width: 30px;
+  height: 40px;
   margin: 5px;
   border-radius: 4px;
   display: grid;
   place-items: center;
-  font-size: 20px;
+  font-size: 16px;
   background-color: grey;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -132,4 +133,15 @@ nav h1 {
 
 .gameOver {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .key {
+    width: 25px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .big {
+    width: 60px;
+  }
 }

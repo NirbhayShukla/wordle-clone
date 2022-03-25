@@ -3,13 +3,8 @@ import React, { useContext, useEffect } from "react";
 import { AppContext } from "../App";
 
 function Letter({ letterPos, attemptValue }) {
-  const {
-    board,
-    correctWord,
-    currentAttempt,
-    disabledLetters,
-    setDisabledLetters,
-  } = useContext(AppContext);
+  const { board, correctWord, currentAttempt, setDisabledLetters } =
+    useContext(AppContext);
 
   const letter = board[attemptValue][letterPos];
 
